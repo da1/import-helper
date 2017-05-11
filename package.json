@@ -1,0 +1,38 @@
+{
+  "name": "import-helper",
+  "main": "./lib/import-helper",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "import-helper:insert"
+  },
+  "repository": "https://github.com/atom/import-helper",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  },
+  "configSchema": {
+      "prefix": {
+          "type": "string",
+          "description": "text is inserted with this prefix.",
+          "default": "",
+          "order": 1
+      },
+      "suffix": {
+          "type": "string",
+          "description": "text is inserted with this suffix.",
+          "default": "",
+          "order": 2
+      },
+      "insertLineNumber": {
+          "type": "integer",
+          "description": "text is inserted on this line.",
+          "default": 0,
+          "order": 3
+      }
+  }
+}
